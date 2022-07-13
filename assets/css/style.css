@@ -1,0 +1,395 @@
+html{
+    font-family: 'Arima Madurai', cursive;
+}
+body{
+    background-color: #f6f6f6;;
+    margin: 0;
+}
+.clearfix::after, .row::after{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+.maxwidth{
+    max-width: 1124px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button{
+    display: inline-block;
+    padding: 1em 3em;
+    background: #d29034;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+}
+.button:hover{
+    background: #bb8129;
+}
+.top-header{
+    text-align: center;
+}
+.top-header-logo{
+    margin: .5em;
+}
+.logotipo-nome{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 30px;
+    font-weight: 600;
+    color: #26272D;
+    text-decoration: none;
+    height: 100px;
+    width: 100px;
+}
+.top-header-logo{
+    color: #bb8129;
+    font-size: 30px;
+    text-decoration: none;
+}
+.top-nav{
+    background: #ffc582;
+    text-align: center;
+}
+.top-nav ul{
+    margin: 0;
+    padding: 1em 0;
+    list-style: none;
+}
+.top-nav a{
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+.top-nav a:hover{
+    background: #f7b161;;
+}
+.top-content{
+    padding: 1em;
+    text-align: center;
+    background-color: #ffd29e;
+}
+.top-content-title{
+    color: #c47a13;
+    font-size: 1.375em;
+    margin: 1.375em;
+}
+.top-content-subtitle{
+    color: #9e5e04;
+    font-size: 1em;
+    line-height: 1.5;
+}
+.middle-content{
+    padding: 2em;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+.middle-content-title{
+    font-size: 2em;
+    color: #c47a13;
+    text-transform: uppercase;
+}
+.middle-content p{
+    line-height: 1.5;
+    color: #222;
+}
+.middle-content span[class^=icon]{
+    font-size: 3em;
+    color: #bb8129;
+}
+.middle-content-subtitle{
+    font-size: 1.2em;
+    color: #454546;
+}
+.middle-content-subtitle-faqs{
+    font-size: 1.5em;
+    color: #454546;
+}
+.button-default{
+    border: 3px solid #ffd64d;
+    color: white;
+    padding: .75em 1.5em;
+    border-radius: 5px;
+    font-size: .8em;
+    display: inline-block;
+    width: auto;
+    transition: all .5s;
+    cursor: pointer;
+}
+.button-default-stroke{
+    background-color: white;
+    border-color: #ffc977;
+    color: inherit;
+}
+.button-default-stroke:hover{
+    color: #000000;
+    border-color: #bb8129;
+    background-color: white
+}
+.numeros-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-image: linear-gradient(-90deg, #ffbf5e 0%, #ffc977 100%);
+    color: #fffcdd;
+    font-family: 'Arima Madurai', cursive;
+}
+.numeros-container .numeros{
+    text-align: center;
+    width: 26.875rem;
+    display: inline;
+    color: #5c5454;
+}
+.numeros-container h2{
+    font-size: 1.rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: white;
+}
+.cards {
+    max-width: 32rem;
+    margin: 0 auto;
+    display: grid;
+    gap: 3.2rem;
+  }
+.card {
+    position: relative;
+    transition: all 0.3s 0s ease;
+}
+.card img {
+    width: 22rem;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    animation: 1s ease 0s 1 normal forwards;
+    transition: all 0.3s 0s ease;
+  }
+.card:hover {
+    transform: scale(1.1);
+}
+input, textarea, select {
+    margin-bottom: 15px;
+    background: #f0eaea;
+    padding: 15px;
+    border-radius: 5px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+}
+input, label, textarea, select {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.contact address h2{
+    color: #454546;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    font-style: normal;
+    text-align: center;
+    font-weight: bold;
+}
+.contact address p{
+    font-size: 16px;
+    text-align: center;
+}
+.maps{
+    width: 100%;
+    height: 450px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.maps iframe{
+    width: 100%;
+}
+footer {
+    color: #353a58;;
+    text-align: center;
+    padding-bottom: .7em;
+    background-color: #b0b2bb;
+}
+.footer-menushare{
+    background: #c4c4c4;
+    padding: 9px;
+}
+.footer-menushare li{
+    display: inline-block;
+    margin: 0 1em;
+}
+.footer-menushare a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #141c27;
+}
+.hidden{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+}
+@media screen and (min-width: 360px){
+    .top-content{
+        background-color: transparent;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "A"
+        "B"
+        "C"
+        "D"
+        "E"
+        "F";
+        justify-content: center;
+        align-content: center;
+      }
+    
+      .card:nth-child(1) {
+        grid-area: A;
+        max-height: 15rem;
+      }
+      .card:nth-child(2) {
+        grid-area: B;
+        max-height: 25rem;
+      }
+      .card:nth-child(3) {
+        grid-area: C;
+        max-height: 15rem;
+      }
+      .card:nth-child(4) {
+        grid-area: D;
+        max-height: 15rem
+      }
+    
+      .card:nth-child(5) {
+        grid-area: E;
+        max-height: 25rem;
+      }
+    
+      .card:nth-child(6) {
+        grid-area: F;
+        max-height: 15rem;
+      }
+}
+@media screen and (min-width: 768px){
+    .top-content{
+        background-color: transparent;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "A B"
+        "C B"
+        "E D"
+        "E F";
+        justify-content: center;
+        align-content: center;
+      }
+    
+      .card:nth-child(1) {
+        grid-area: A;
+        max-height: 15rem;
+      }
+      .card:nth-child(2) {
+        grid-area: B;
+        max-height: 35rem;
+      }
+      .card:nth-child(3) {
+        grid-area: C;
+        max-height: 15rem;
+      }
+      .card:nth-child(4) {
+        grid-area: D;
+        max-height: 15rem
+      }
+    
+      .card:nth-child(5) {
+        grid-area: E;
+        max-height: 35rem;
+      }
+    
+      .card:nth-child(6) {
+        grid-area: F;
+        max-height: 15rem;
+      }
+}
+@media screen and (min-width: 1020px){
+    .top-content{
+        background-color: #ffd29e;
+    }
+    .col-1_4{
+        width: 23%;
+        margin: 1%;
+        float: left;
+    }
+    .col-1_2{
+        width: 48%;
+        margin: 1%;
+        float: left;
+    }
+    .top-nav{
+        background: transparent;
+        float: right;
+        margin-top: 29px;
+    }
+    .top-nav ul{
+        margin: 0;
+        padding: 0;
+    }
+    .top-nav li{
+        display: inline-block;
+    }
+    .top-nav a{
+        color: #bb8129;
+    }
+    .top-nav a:hover{
+        background: #ffd29e;
+        border-radius: 30px;
+    }
+    .logotipo-nome{
+        float: left;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "A B C"
+        "E B F"
+        "E D F";
+        justify-content: center;
+        align-content: center;
+      }
+    
+      .card:nth-child(1) {
+        grid-area: A;
+        max-height: 15rem;
+      }
+      .card:nth-child(2) {
+        grid-area: B;
+        max-height: 35rem;
+      }
+      .card:nth-child(3) {
+        grid-area: C;
+        max-height: 15rem;
+      }
+      .card:nth-child(4) {
+        grid-area: D;
+        max-height: 15rem
+      }
+    
+      .card:nth-child(5) {
+        grid-area: E;
+        max-height: 35rem;
+      }
+    
+      .card:nth-child(6) {
+        grid-area: F;
+        max-height: 35rem;
+      }
+}
